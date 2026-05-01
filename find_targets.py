@@ -30,7 +30,35 @@ HEADERS = {
 SKIP_EMAIL_DOMAINS = {
     "gmail.com", "yahoo.com", "hotmail.com", "outlook.com",
     "example.com", "test.com", "domain.com", "yoursite.com",
-    "youremail.com", "email.com", "mail.com",
+    "youremail.com", "email.com", "mail.com", "xyz.com",
+    "site.com", "website.com", "mydomain.com", "company.com",
+    "wixpress.com", "squarespace.com", "weebly.com",
+}
+
+# Placeholder email patterns — reject these regardless of domain
+FAKE_EMAIL_PATTERNS = [
+    "abc@", "test@test", "email@site", "name@", "user@", "you@",
+    "yourname@", "example@", "hello@example", "info@example",
+    "admin@example", "webmaster@example", "no-reply@example",
+]
+
+# File extension patterns that are NOT emails (image/asset filenames)
+NON_EMAIL_EXTENSIONS = re.compile(
+    r"\.(png|jpg|jpeg|gif|svg|ico|pdf|zip|mp4|webp|woff|ttf|css|js)$", re.I
+)
+
+# Domains we know are NOT guest posting blogs
+EXTRA_BLOCKLIST = {
+    # News outlets
+    "moneycontrol.com", "ndtv.com", "timesofindia.com", "hindustantimes.com",
+    "economictimes.com", "livemint.com", "businesstoday.in", "inc42.com",
+    "yourstory.com", "entrackr.com", "tcrn.ch",
+    # Exchanges & big brands (not blogs)
+    "coinswitch.co", "wazirx.com", "coindcx.com", "zebpay.com",
+    "binance.com", "coinbase.com", "kraken.com",
+    # Irrelevant verticals
+    "amity.edu", "naukri.com", "shine.com", "jobaaj.com",
+    "monafoundation.org", "ikigailaw.com", "imarticus.org",
 }
 
 EDITORIAL_KEYWORDS = [
@@ -60,7 +88,8 @@ def get_domain(url: str) -> str:
 
 
 def is_blocked_domain(url: str) -> bool:
-    return get_domain(url) in DOMAIN_BLOCKLIST
+    domain = get_domain(url)
+    return domain in DOMAIN_BLOCKLIST or domain in EXTRA_BLOCKLIST
 
 
 def fetch_page(url: str, timeout: int = 10) -> Optional[str]:
@@ -74,21 +103,64 @@ def fetch_page(url: str, timeout: int = 10) -> Optional[str]:
     return None
 
 
+def is_valid_email(email: str) -> bool:
+    """Return True only if the email looks like a real editorial address."""
+    email = email.lower().strip(".")
+
+    # Reject image/asset filenames accidentally captured by the regex
+    if NON_EMAIL_EXTENSIONS.search(email):
+        return False
+
+    # Must have exactly one @
+    parts = email.split("@")
+    if len(parts) != 2:
+        return False
+
+    local, domain = parts
+
+    # Reject known junk domains
+    if domain in SKIP_EMAIL_DOMAINS:
+        return False
+
+    # Reject known placeholder patterns
+    if any(email.startswith(p) or p in email for p in FAKE_EMAIL_PATTERNS):
+        return False
+
+    # Domain must look like a real TLD (at least one dot, reasonable length)
+    if "." not in domain or len(domain) < 4 or len(domain) > 60:
+        return False
+
+    # Local part must be at least 2 chars and not purely numeric
+    if len(local) < 2 or local.isdigit():
+        return False
+
+    # Reject overly long addresses (usually garbled)
+    if len(email) > 70:
+        return False
+
+    return True
+
+
 def extract_email(html: str) -> Optional[str]:
     """Extract the best editorial email from page HTML."""
-    emails = re.findall(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}", html)
+    # Use BeautifulSoup to get text-only (avoids capturing URLs/src attributes)
+    try:
+        soup = BeautifulSoup(html, "lxml")
+        # Remove script and style tags
+        for tag in soup(["script", "style"]):
+            tag.decompose()
+        text = soup.get_text(" ")
+    except Exception:
+        text = html
+
+    emails = re.findall(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}", text)
     priority, others = [], []
 
-    for email in emails:
-        email = email.lower().strip(".")
-        domain = email.split("@")[1]
-        local  = email.split("@")[0]
-
-        if domain in SKIP_EMAIL_DOMAINS:
+    for raw_email in emails:
+        email = raw_email.lower().strip(".")
+        if not is_valid_email(email):
             continue
-        if len(email) > 80:
-            continue
-
+        local = email.split("@")[0]
         if any(kw in local for kw in EDITORIAL_KEYWORDS):
             priority.append(email)
         else:
