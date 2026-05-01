@@ -21,9 +21,9 @@ MAX_PITCHES_PER_DAY      = 8   # pitch emails to send
 MAX_FOLLOWUPS_PER_DAY    = 10  # follow-up emails to send
 
 # ── Follow-up timing (days after pitch) ───────────────────────────────────────
-FOLLOW_UP_1_DAYS  = 5
-FOLLOW_UP_2_DAYS  = 10
-BREAKUP_DAYS      = 14
+FOLLOW_UP_1_DAYS  = 2
+FOLLOW_UP_2_DAYS  = 4
+BREAKUP_DAYS      = 6
 
 # ── Author + brand ────────────────────────────────────────────────────────────
 AUTHOR_NAME    = "Mahaveer Soni"
@@ -146,12 +146,11 @@ Best,
 FOLLOW_UP_1_TEMPLATE = """\
 Hi {greeting},
 
-Just checking if my previous email found you — inboxes get busy.
+Bumping this up in case it got buried — wanted to check if the guest post idea works for you:
 
-Still keen to contribute on:
 "{topic_title}"
 
-Happy to adjust the angle if needed.
+Happy to adjust the angle or topic if needed.
 
 Best,
 {author_name}
@@ -176,14 +175,12 @@ Worth a conversation?
 BREAKUP_TEMPLATE = """\
 Hi {greeting},
 
-I'll stop following up after this — don't want to clutter your inbox.
+Last one from me — don't want to clog your inbox.
 
-If the timing isn't right or the topics don't fit {blog_name}'s editorial calendar, \
-completely understood.
+If the timing isn't right or it's not a fit for {blog_name}, no problem at all. \
+The topic stays open if you ever want to revisit.
 
-The original idea is still open if you come back to it.
-
-Best of luck with the blog,
+Best,
 {author_name}
 """
 
