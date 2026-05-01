@@ -47,9 +47,9 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 MAX_PER_RUN = 5  # LinkedIn warm-ups per run (avoid rate limits)
 
 AUTHOR_CONTEXT = """
-You are writing as Mahaveer Soni — founder of Grade Capital (India's first crypto
-derivatives fund) and Grade Institute of Finance. Expert in crypto markets, DeFi,
-blockchain regulation, and tokenization. 3+ years managing a live derivatives fund.
+You are writing as Mahaveer Soni — Marketing Manager at Grade Capital (India's first
+crypto derivatives fund) and Grade Institute of Finance. Expert in crypto markets, DeFi,
+blockchain regulation, and tokenization. 3+ years at Grade Capital working with live derivatives markets.
 """
 
 STYLE_RULES = """

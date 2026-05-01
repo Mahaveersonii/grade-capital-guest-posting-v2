@@ -27,14 +27,14 @@ BREAKUP_DAYS      = 14
 
 # ── Author + brand ────────────────────────────────────────────────────────────
 AUTHOR_NAME    = "Mahaveer Soni"
-AUTHOR_TITLE   = "Founder, Grade Capital & Grade Institute of Finance"
+AUTHOR_TITLE   = "Marketing Manager, Grade Capital & Grade Institute of Finance"
 AUTHOR_LINKEDIN = "linkedin.com/in/mahaveersoni"
 AUTHOR_WEBSITE  = "grade.capital"
 AUTHOR_BIO = (
-    "Mahaveer Soni is the founder of Grade Capital — India's first professionally "
+    "Mahaveer Soni is the Marketing Manager at Grade Capital — India's first professionally "
     "managed crypto derivatives fund — and Grade Institute of Finance (GIF), where "
     "over 2,000 students have been trained in crypto, blockchain, DeFi, and Web3. "
-    "With 3+ years managing a live derivatives fund, he writes about crypto markets, "
+    "With 3+ years at Grade Capital working closely with live derivatives markets, he writes about crypto markets, "
     "regulation, blockchain infrastructure, and financial education in India."
 )
 
@@ -131,9 +131,9 @@ It covers:
 • {bullet_2}
 • {bullet_3}
 
-About me: {author_name}, founder of Grade Capital (India's first crypto derivatives fund) \
-and Grade Institute of Finance, where we've trained 2,000+ students on crypto and \
-blockchain across India.
+About me: {author_name}, Marketing Manager at Grade Capital (India's first crypto \
+derivatives fund) and Grade Institute of Finance, where we've trained 2,000+ students \
+on crypto and blockchain across India.
 
 Would this work for {blog_name}?
 
@@ -212,7 +212,7 @@ Best,
 
 # ── LinkedIn warmup comment instruction (used by local linkedin_warmup.py) ────
 LINKEDIN_COMMENT_INSTRUCTION = """
-Write a LinkedIn comment as Mahaveer Soni (Grade Capital / Grade Institute of Finance founder).
+Write a LinkedIn comment as Mahaveer Soni (Marketing Manager at Grade Capital / Grade Institute of Finance).
 
 The comment should:
 1. Open with a sharp, specific opinion on the post content (2-3 sentences max)
