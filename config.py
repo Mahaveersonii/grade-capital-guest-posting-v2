@@ -33,16 +33,16 @@ AUTHOR_WEBSITE  = "grade.capital"
 AUTHOR_BIO = (
     "Mahaveer Soni is the Marketing Manager at Grade Capital — India's first professionally "
     "managed crypto derivatives fund — and Grade Institute of Finance (GIF), where "
-    "over 2,000 students have been trained in crypto, blockchain, DeFi, and Web3. "
+    "over 2,000 financial advisors have been certified in crypto investment across India. "
     "With 3+ years at Grade Capital working closely with live derivatives markets, he writes about crypto markets, "
-    "regulation, blockchain infrastructure, and financial education in India."
+    "regulation, blockchain infrastructure, and crypto investment in India."
 )
 
 GIF_CONTEXT = """
 Grade Institute of Finance (GIF) is India's leading crypto and blockchain education platform.
-We've trained 2,000+ students across India on crypto, blockchain, DeFi, Web3, and crypto regulation.
+We've certified 2,000+ financial advisors across India on crypto investment, blockchain, DeFi, Web3, and crypto regulation.
 Our faculty are active practitioners — fund managers and blockchain developers, not academics.
-We offer certification courses, bootcamps, and corporate training programs.
+We offer certification programs specifically for financial advisors and investment professionals.
 Grade Capital is our companion entity — India's first professionally managed crypto derivatives fund.
 Key expertise areas: crypto regulation India (IFSCA, SEBI, FIU-IND), DeFi mechanics,
 Bitcoin as an asset class, blockchain for finance, tokenization, Web3 education.
@@ -132,8 +132,8 @@ It covers:
 • {bullet_3}
 
 About me: {author_name}, Marketing Manager at Grade Capital (India's first crypto \
-derivatives fund) and Grade Institute of Finance, where we've trained 2,000+ students \
-on crypto and blockchain across India.
+derivatives fund) and Grade Institute of Finance, where we've certified 2,000+ financial \
+advisors on crypto investment across India.
 
 Would this work for {blog_name}?
 
