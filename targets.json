@@ -200,15 +200,15 @@
       "editor_name": "",
       "editor_email": "info@wemindia.com",
       "niche": "crypto",
-      "status": "follow_up_1",
+      "status": "article_sent",
       "found_date": "2026-05-01",
       "pitch_date": "2026-05-01",
       "follow_up_1_date": "2026-05-03",
       "follow_up_2_date": null,
       "breakup_date": null,
-      "article_sent_date": null,
-      "replied": false,
-      "reply_type": null,
+      "article_sent_date": "2026-05-04",
+      "replied": true,
+      "reply_type": "yes",
       "topic_title": "Why India's IFSCA Sandbox Could Launch the Next Crypto Unicorn",
       "topic_bullets": [
         "How Indian crypto startups can legally test products in GIFT City's regulatory sandbox without FIU-IND compliance hurdles",
@@ -222,7 +222,7 @@
         "Building a crypto education model that works in India's unique regulatory grey zone"
       ],
       "linkedin_warmed": false,
-      "notes": ""
+      "notes": "Nandana (nandana@wemindia.com) replied YES. Article PDF sent to nandana@wemindia.com on 2026-05-04. Follow-up 1 sent by pipeline before reply was detected. All further follow-ups stopped."
     },
     {
       "id": "8bf5ccc03c6fb6f10a780c56efea12c6",
