@@ -1096,11 +1096,11 @@
       "editor_name": "",
       "editor_email": "feedback@thecore.in",
       "niche": "crypto",
-      "status": "follow_up_1",
+      "status": "follow_up_2",
       "found_date": "2026-05-08",
       "pitch_date": "2026-05-08",
       "follow_up_1_date": "2026-05-10",
-      "follow_up_2_date": null,
+      "follow_up_2_date": "2026-05-12",
       "breakup_date": null,
       "article_sent_date": null,
       "replied": false,
@@ -1135,8 +1135,8 @@
       "follow_up_2_date": null,
       "breakup_date": null,
       "article_sent_date": null,
-      "replied": false,
-      "reply_type": null,
+      "replied": true,
+      "reply_type": "other",
       "topic_title": "Why India's IFSCA Crypto Framework Could Shape Asia's Regulation",
       "topic_bullets": [
         "How IFSCA's GIFT City sandbox differs from mainland crypto regulations and what it means for institutional adoption",
@@ -1150,7 +1150,7 @@
         "Regulatory compliance gaps advisors overlook when recommending crypto to clients under SEBI guidelines"
       ],
       "linkedin_warmed": false,
-      "notes": ""
+      "notes": "##- Please type your reply above this line -##\r\n\r\nYour request (38963) has been received and is being reviewed by our support staff.\r\n\r\nTo add additional comments, reply to this email.\r\n\r\n\r\n\r\n--------"
     }
   ]
 }
