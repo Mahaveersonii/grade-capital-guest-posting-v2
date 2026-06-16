@@ -2151,6 +2151,30 @@
       "alt_topic_bullets": [],
       "linkedin_warmed": false,
       "notes": ""
+    },
+    {
+      "id": "c0ee2fde1d6b4e378530300a01d6a1a0",
+      "blog_name": "orfonline.org",
+      "blog_url": "https://orfonline.org",
+      "guest_post_url": "https://orfonline.org/write-for-us",
+      "editor_name": "",
+      "editor_email": "publish@orfonline.org",
+      "niche": "crypto",
+      "status": "new",
+      "found_date": "2026-06-16",
+      "pitch_date": null,
+      "follow_up_1_date": null,
+      "follow_up_2_date": null,
+      "breakup_date": null,
+      "article_sent_date": null,
+      "replied": false,
+      "reply_type": null,
+      "topic_title": null,
+      "topic_bullets": [],
+      "alt_topic_title": null,
+      "alt_topic_bullets": [],
+      "linkedin_warmed": false,
+      "notes": ""
     }
   ]
 }
