@@ -2127,8 +2127,8 @@
       "follow_up_2_date": null,
       "breakup_date": null,
       "article_sent_date": null,
-      "replied": false,
-      "reply_type": null,
+      "replied": true,
+      "reply_type": "yes",
       "topic_title": "Why Indian Financial Advisors Are Your Secret Crypto Onramp",
       "topic_bullets": [
         "How India's 2,000+ crypto-certified advisors are bridging the trust gap between traditional investors and digital assets",
@@ -2142,7 +2142,7 @@
         "Grade Capital's operational playbook: Running a regulated crypto fund under India's emerging framework"
       ],
       "linkedin_warmed": false,
-      "notes": ""
+      "notes": "Article gen failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ccco6my3HQvxqumyXfXoq'}"
     },
     {
       "id": "83c14fe777bcafe0817eb46ce8ead7ed",
