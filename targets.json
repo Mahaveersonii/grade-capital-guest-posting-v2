@@ -2223,8 +2223,8 @@
       "follow_up_2_date": null,
       "breakup_date": null,
       "article_sent_date": null,
-      "replied": false,
-      "reply_type": null,
+      "replied": true,
+      "reply_type": "yes",
       "topic_title": "Why Indian Financial Advisors Are Still Getting Crypto Wrong",
       "topic_bullets": [
         "How traditional portfolio construction frameworks fail with crypto's non-normal return distributions and what advisors should use instead",
@@ -2238,7 +2238,7 @@
         "Case analysis: Why offshore-onshore crypto structures will dominate Indian institutional adoption through 2025"
       ],
       "linkedin_warmed": false,
-      "notes": ""
+      "notes": "Article gen failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcgZEk3ZGJ2B9VL9kXJk2'}"
     },
     {
       "id": "b811e9553d9aa6b856d28005271ad600",
