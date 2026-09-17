@@ -2863,6 +2863,30 @@
       "alt_topic_bullets": [],
       "linkedin_warmed": false,
       "notes": ""
+    },
+    {
+      "id": "3f10db6e578b5c1fc4dc52e26c569bda",
+      "blog_name": "TechToken",
+      "blog_url": "https://techtoken.in",
+      "guest_post_url": "https://techtoken.in/write-for-us",
+      "editor_name": "",
+      "editor_email": "hello@techtoken.in",
+      "niche": "crypto",
+      "status": "new",
+      "found_date": "2026-09-17",
+      "pitch_date": null,
+      "follow_up_1_date": null,
+      "follow_up_2_date": null,
+      "breakup_date": null,
+      "article_sent_date": null,
+      "replied": false,
+      "reply_type": null,
+      "topic_title": null,
+      "topic_bullets": [],
+      "alt_topic_title": null,
+      "alt_topic_bullets": [],
+      "linkedin_warmed": false,
+      "notes": ""
     }
   ]
 }
