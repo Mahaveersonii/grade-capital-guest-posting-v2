@@ -2959,6 +2959,30 @@
       "alt_topic_bullets": [],
       "linkedin_warmed": false,
       "notes": ""
+    },
+    {
+      "id": "abc3e94f9ba9d81a7fd2b90345a807c7",
+      "blog_name": "XIME Bangalore",
+      "blog_url": "https://xime.org",
+      "guest_post_url": "https://xime.org/contribute",
+      "editor_name": "",
+      "editor_email": "editorjme@xime.org",
+      "niche": "crypto",
+      "status": "new",
+      "found_date": "2026-09-25",
+      "pitch_date": null,
+      "follow_up_1_date": null,
+      "follow_up_2_date": null,
+      "breakup_date": null,
+      "article_sent_date": null,
+      "replied": false,
+      "reply_type": null,
+      "topic_title": null,
+      "topic_bullets": [],
+      "alt_topic_title": null,
+      "alt_topic_bullets": [],
+      "linkedin_warmed": false,
+      "notes": ""
     }
   ]
 }
