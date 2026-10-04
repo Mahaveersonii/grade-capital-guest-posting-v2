@@ -3103,6 +3103,30 @@
       "alt_topic_bullets": [],
       "linkedin_warmed": false,
       "notes": ""
+    },
+    {
+      "id": "75df2515b0ccd4391a35f616d34b6956",
+      "blog_name": "arXiv.org e-Print archive",
+      "blog_url": "https://arxiv.org",
+      "guest_post_url": "https://arxiv.org/html/2301.07889v1",
+      "editor_name": "",
+      "editor_email": "rparizi1@kennesaw.edu",
+      "niche": "crypto",
+      "status": "new",
+      "found_date": "2026-10-04",
+      "pitch_date": null,
+      "follow_up_1_date": null,
+      "follow_up_2_date": null,
+      "breakup_date": null,
+      "article_sent_date": null,
+      "replied": false,
+      "reply_type": null,
+      "topic_title": null,
+      "topic_bullets": [],
+      "alt_topic_title": null,
+      "alt_topic_bullets": [],
+      "linkedin_warmed": false,
+      "notes": ""
     }
   ]
 }
